@@ -10,19 +10,19 @@ class SquareTestCase(unittest.TestCase):
         res = perimeter(0)
         self.assertEqual(res, 0)
 
-    def test_circle_area_1(self):
+    def test_square_area_1(self):
         res = area(10)
         self.assertEqual(res, 100)
         
-    def test_circle_area_2(self):
+    def test_square_area_2(self):
         res = area(7*5)
         self.assertEqual(res, 35**2)
 
-    def test_circle_perimeter_1(self):
+    def test_square_perimeter_1(self):
         res = perimeter(8*15)
         self.assertEqual(res,(8*15) * 4)
     
-    def test_circle_perimeter_2(self):
+    def test_square_perimeter_2(self):
         res = perimeter(45)
         self.assertEqual(res, 45 * 4)
 
