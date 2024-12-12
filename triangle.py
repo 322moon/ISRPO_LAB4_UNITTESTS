@@ -23,7 +23,7 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 24)
     
     def test_triangle_perimeter_2(self):
-        res = perimeter(45, 54, 90)
+        res = perimeter(-45, -54, 90)
         self.assertEqual(res, 189)
 
 
