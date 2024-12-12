@@ -1,5 +1,6 @@
 import unittest
 
+
 class SquareTestCase(unittest.TestCase):
 
     def test_zero_area(self):
@@ -13,24 +14,26 @@ class SquareTestCase(unittest.TestCase):
     def test_square_area_1(self):
         res = area(10)
         self.assertEqual(res, 100)
-        
+
     def test_square_area_2(self):
-        res = area(7*5)
-        self.assertEqual(res, 35**2)
+        res = area(7 * 5)
+        self.assertEqual(res, 35 ** 2)
 
     def test_square_perimeter_1(self):
-        res = perimeter(8*15)
-        self.assertEqual(res,(8*15) * 4)
-    
+        res = perimeter(8 * 15)
+        self.assertEqual(res, (8 * 15) * 4)
+
     def test_square_perimeter_2(self):
         res = perimeter(45)
         self.assertEqual(res, 45 * 4)
 
 
-
 def area(a):
     return a * a
-    
+
+
 def perimeter(a):
     return 4 * a
-  
+
+if __name__ == "__main__":
+    unittest.main()
